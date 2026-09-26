@@ -4,6 +4,7 @@ import PlanCard from "@/components/home/PlanCard";
 import { WorkoutContext } from "@/context/WorkoutContext";
 import { GymType } from "@/types/gymType";
 import Link from "next/link";
+
 import { useContext, useState } from "react";
 
 const MyPlanPage = () => {
@@ -31,21 +32,19 @@ const MyPlanPage = () => {
   const sortedPlan = sortWorkout(plan);
   const sortedSaved = sortWorkout(saved);
 
+  const [activeTab, setActiveTab] = useState<"plan" | "save">("plan");
 
-  const [activeTab, setActiveTab] = useState<'plan' | 'save'>('plan');
+  const activeWorkouts = activeTab === "plan" ? plan : saved;
 
-const activeWorkouts = activeTab === "plan" ? plan : saved;
+  const totalMinutes = activeWorkouts.reduce(
+    (total, workout) => total + workout.duration,
+    0,
+  );
 
-const totalMinutes = activeWorkouts.reduce(
-  (total, workout) => total + workout.duration,
-  0,
-);
-
-const totalCalories = activeWorkouts.reduce(
-  (total, workout) => total + workout.caloriesBurned,
-  0,
-);
-
+  const totalCalories = activeWorkouts.reduce(
+    (total, workout) => total + workout.caloriesBurned,
+    0,
+  );
 
   return (
     <section className="container mx-auto md:px-3 px-2">
