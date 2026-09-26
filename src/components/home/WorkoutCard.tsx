@@ -16,7 +16,7 @@ const WorkoutCard = ({ workout }: GymCardProps) => {
           <Image
             src={workout.image}
             alt={workout.name}
-            fill
+            fill 
             loading="eager"
             sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
             className="object-cover transition duration-300 group-hover:scale-105"

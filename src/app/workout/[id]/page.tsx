@@ -4,12 +4,12 @@ import Image from "next/image";
 
 import React from "react";
 
-const getGymData = async (id: string) => {
-  const res = await fetch(`https://api.abcz.workers.dev/api/fitlog/${id}`);
+const getGymData = async (id: string |number) => {
+  const res = await fetch(`https://api.api-store.workers.dev/api/fitlog/${id}`);
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch workout data");
-  }
+  // if (!res.ok) {
+  //   throw new Error("Failed to fetch workout data");
+  // }
 
   return res.json();
 };

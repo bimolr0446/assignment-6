@@ -5,9 +5,12 @@ import WorkoutLibrary from "@/components/home/WorkoutLibrary";
 
 import { GymType } from "@/types/gymType";
 const getGym = async (): Promise<GymType[]> => {
-  const res = await fetch("https://api.abcz.workers.dev/api/fitlog");
+  const res = await fetch("https://api.api-store.workers.dev/api/fitlog");
+//  if (!res.ok) {
+//    throw new Error("Failed to fetch workout data");
+//  }
 
-  return res.json();
+ return res.json();
 };
 
 const HomePage =async () => {
