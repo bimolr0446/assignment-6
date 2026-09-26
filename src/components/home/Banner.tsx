@@ -6,20 +6,20 @@ const Banner = () => {
     <section className="container mx-auto">
       <section className="w-full py-6">
         <div className=" rounded-xl border border-[#252830] bg-[#15171c]">
-          <div className="grid min-h-55 grid-cols-1 items-center md:grid-cols-2">
+          <div className="grid lg:min-h-100 md:min-h-55 grid-cols-1 items-center md:grid-cols-2 md:text-start text-center ">
             {/* Left Content */}
             <div className="px-5 py-8 sm:px-8 md:px-10 lg:px-12">
               <p className="mb-3 text-[9px] font-bold uppercase tracking-wider text-[#c8ff00]">
                 Workout Library
               </p>
 
-              <h1 className=" text-3xl font-black uppercase leading-[0.95] tracking-tight text-white sm:text-4xl md:text-[38px] lg:text-[42px]">
+              <h1 className=" lg:text-4xl md:text-2xl sm:text-xl font-black uppercase leading-[0.95] tracking-tight text-white ">
                 Train With Intent. Log
                 <br />
                 Every Set.
               </h1>
 
-              <p className="mt-4 max-w-107.5 text-[10px] leading-4 text-[#8b909b] sm:text-xs">
+              <p className="mt-4 md:max-w-107.5 text-[10px] leading-4 text-[#8b909b] sm:text-start text-center">
                 FitLog is a dark, no-nonsense gym companion: pick a lift, lock
                 it into today&apos;s plan, and watch the week&apos;s work add
                 up.
