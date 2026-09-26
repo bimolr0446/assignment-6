@@ -25,18 +25,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      data-theme ="dark"
+      data-theme="dark"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <main>
-          <WorkoutProvider>
-            <Navbar></Navbar>
-            {children}
-            <Footer></Footer>
-            <ToastContainer />
-          </WorkoutProvider>
-        </main>
+      <body className="min-h-screen flex flex-col">
+        <WorkoutProvider>
+          <Navbar></Navbar>
+          <main className="flex-1">{children}</main>
+          <Footer></Footer>
+          <ToastContainer />
+        </WorkoutProvider>
       </body>
     </html>
   );

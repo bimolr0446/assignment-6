@@ -1,12 +1,11 @@
 import { GymType } from "@/types/gymType";
-import GymCard from "./WorkoutCard";
-interface WorkoutLibraryProps{
-  gymData:GymType[]
+
+import WorkoutCard from "./WorkoutCard";
+interface WorkoutLibraryProps {
+  gymData: GymType[];
 }
 
-const WorkoutLibrary =  ({gymData}:WorkoutLibraryProps) => {
-
-
+const WorkoutLibrary = ({ gymData }: WorkoutLibraryProps) => {
   return (
     <section className="container mx-auto px-4 py-12">
       {/* Header */}
@@ -23,7 +22,7 @@ const WorkoutLibrary =  ({gymData}:WorkoutLibraryProps) => {
       {/* Cards */}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {gymData.map((workout) => (
-          <GymCard key={workout.id} workout={workout} />
+          <WorkoutCard key={workout.id} workout={workout} />
         ))}
       </div>
     </section>

@@ -8,7 +8,7 @@ const Plan = () => {
     {/*ata copilot theke suggest korce tai add korci*/}
     return (
       <Link href='/myPlan'>
-        <button className="flex gap-2 ">
+        <button className="flex gap-2 cursor-pointer">
           Plan{" "}
           <span className="text-black bg-[#CCFF00] rounded-full px-2">
             {plan.length}
