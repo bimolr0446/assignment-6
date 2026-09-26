@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## GymForge
 
-## Getting Started
+GymForge is a modern workout management application that helps users discover workouts, create personal workout plans, save exercises, and manage their fitness routine.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+=> Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+=> Workout Library:
+Browse a collection of different workouts with useful information such as:
+- Muscle groups
+- Equipment
+- Duration
+- Calories burned
+- Rating
+- Sets & reps
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+=> Workout Details:
+View complete information about a specific workout, including:
+- Workout image
+- Description
+- Difficulty level
+- Equipment
+- Sets and reps
+- Duration
+- Calories
+- Rating
+- Step-by-step instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+=> Personal Workout Plan:
+Users can add workouts to their daily plan and easily manage the workouts they want to complete.
 
-## Learn More
+=> Save Workouts:
+Users can save workouts for later and manage their saved workout collection separately.
 
-To learn more about Next.js, take a look at the following resources:
+=> Responsive & Smooth UI:
+The application is fully responsive and provides:
+- Mobile-friendly layout
+- Tablet layout
+- Desktop layout
+- Loading skeletons
+- Custom 404 / Not Found page
+- Toast notifications
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+=> Technologies Used
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Next.js – React framework for building the application
+2. React– UI development
+3. TypeScript – Type-safe development
+4. Tailwind CSS – Styling and responsive design
+5. React Toastify – Toast notifications
+6. Next Image – Optimized image rendering
+7. Context API – Global workout plan and saved workout state
+- **REST API** – Fetching workout data
